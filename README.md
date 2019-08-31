@@ -3,23 +3,23 @@ This Tcl extension provides access to winapi function [SetWindowsHookEx()](https
 
 Only a limited number of hooks are currently supported by this extension.
 
-Hook | Thread | Thread revocable | Global |
-------------- | ------------- | ------------ |
-WH_CALLWNDPROC | :black_square_button: | :black_square_button: | :black_square_button:
-WH_CALLWNDPROCRET | :black_square_button: | :black_square_button: | :black_square_button:
-WH_CBT | :black_square_button: | :black_square_button: | :black_square_button:
-WH_DEBUG | :black_square_button: | :black_square_button: | :black_square_button:
-WH_FOREGROUNDIDLE | :black_square_button: | :black_square_button: | :black_square_button:
-WH_GETMESSAGE | :black_square_button: | :black_square_button: | :black_square_button:
-WH_JOURNALPLAYBACK | :no_entry: | :no_entry: | :black_square_button:
-WH_JOURNALRECORD | :no_entry: | :no_entry: | :black_square_button:
-WH_KEYBOARD | :white_check_mark: | :white_check_mark: | :black_square_button:
-WH_KEYBOARD_LL | :no_entry: | :no_entry: | :black_square_button:
-WH_MOUSE | :black_square_button: | :black_square_button: | :black_square_button:
-WH_MOUSE_LL | :no_entry: | :no_entry: | :black_square_button:
-WH_MSGFILTER | :black_square_button: | :black_square_button: | :black_square_button:
-WH_SHELL | :black_square_button: | :black_square_button: | :black_square_button:
-WH_SYSMSGFILTER | :no_entry: | :no_entry: | :black_square_button:
+| Hook | Thread | Thread revocable | Global |
+| ---- | ------ | ---------------- | ------ |
+| WH_CALLWNDPROC | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_CALLWNDPROCRET | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_CBT | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_DEBUG | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_FOREGROUNDIDLE | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_GETMESSAGE | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_JOURNALPLAYBACK | :no_entry: | :no_entry: | :black_square_button:
+| WH_JOURNALRECORD | :no_entry: | :no_entry: | :black_square_button:
+| WH_KEYBOARD | :white_check_mark: | :white_check_mark: | :black_square_button:
+| WH_KEYBOARD_LL | :no_entry: | :no_entry: | :black_square_button:
+| WH_MOUSE | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_MOUSE_LL | :no_entry: | :no_entry: | :black_square_button:
+| WH_MSGFILTER | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_SHELL | :black_square_button: | :black_square_button: | :black_square_button:
+| WH_SYSMSGFILTER | :no_entry: | :no_entry: | :black_square_button:
 
 # Procedures
 ## setHook
