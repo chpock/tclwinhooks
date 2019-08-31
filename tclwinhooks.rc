@@ -1,0 +1,36 @@
+#include <winver.h>
+#include "version.h"
+
+1 VERSIONINFO
+FILEVERSION VER_MAJOR,VER_MINOR,VER_REVIS,VER_BUILD
+PRODUCTVERSION VER_MAJOR,VER_MINOR,VER_REVIS,VER_BUILD
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+FILESUBTYPE VFT2_UNKNOWN
+
+#ifdef DEBUG
+FILEFLAGS VS_FF_PRERELEASE|VS_FF_DEBUG
+#else
+FILEFLAGS VS_FF_PRERELEASE
+#endif
+
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "000004E4"
+        {
+            VALUE "FileDescription", PACKAGE_DESC
+            VALUE "FileVersion", PACKAGE_VERSION
+            VALUE "ProductVersion", PACKAGE_VERSION
+            VALUE "InternalName", PACKAGE_NAME
+            VALUE "OriginalFilename", PACKAGE_FILENAME
+            VALUE "ProductName", PACKAGE_NAME
+            VALUE "CompanyName", PACKAGE_OWNER
+            VALUE "LegalCopyright", PACKAGE_COPYRIGHT
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation",0,0x4e4
+    }
+}

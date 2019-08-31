@@ -1,0 +1,4 @@
+[submodule "deps/tcl"]
+	path = deps/tcl
+	url = https://github.com/tcltk/tcl.git
+	branch = core-8-6-10-rc
